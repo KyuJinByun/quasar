@@ -12,6 +12,6 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'Vue를 재미있게 공부해봅시다!',
 })
 </script>

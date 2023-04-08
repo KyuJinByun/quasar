@@ -12,7 +12,8 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          <!--타이틀에 메인페이지로 링크 걸기-->
+          <q-btn to='/' label="Vue Study" class="text-subtitle1" unelevated></q-btn>
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
@@ -51,6 +52,19 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
+    // 추가
+    title: 'Vue 기초 문법',
+    caption: 'Vue 핵심가이드',
+    icon: 'school',
+    link: '/vue'
+  },
+  {
+    title: 'Shopping List',
+    caption: 'vue 실습 1',
+    icon: 'code',
+    link: '/shop'
+  },
+  /*{
     title: 'Docs',
     caption: 'quasar.dev',
     icon: 'school',
@@ -91,7 +105,7 @@ const linksList = [
     caption: 'Community Quasar projects',
     icon: 'favorite',
     link: 'https://awesome.quasar.dev'
-  }
+  }*/
 ]
 
 export default defineComponent({
